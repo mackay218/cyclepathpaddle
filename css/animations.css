@@ -1,0 +1,24 @@
+
+
+
+@-webkit-keyframes waves {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes waves {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes waves {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+#waves{
+  -webkit-animation: waves 30s ease infinite;
+  -moz-animation: waves 30s ease infinite;
+  animation: waves 30s ease infinite;
+}
