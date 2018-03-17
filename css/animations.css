@@ -22,3 +22,49 @@
   -moz-animation: waves 30s ease infinite;
   animation: waves 30s ease infinite;
 }
+
+#waves2{
+  -webkit-animation: waves 5s linear infinite alternate;
+  -moz-animation: waves 5s linear infinite alternate;
+  animation: waves 5s linear infinite alternate;
+}
+
+#waves3{
+  -webkit-animation: waves 6s linear infinite alternate;
+  -moz-animation: waves 6s linear infinite alternate;
+  animation: waves 6s linear infinite alternate;
+}
+
+
+@-webkit-keyframes canoe {
+  from{
+    transform: rotate(2deg);
+  }
+  to{
+    transform: rotate(-2deg);
+  }
+}
+@-moz-keyframes canoe{
+  from{
+    transform: rotate(2deg);
+  }
+
+  to{
+    transform: rotate(-2deg);
+  }
+}
+@keyframes canoes{
+  from{
+    transform: rotate(2deg);
+  }
+
+  to{
+    transform: rotate(-2deg);
+  }
+}
+
+#canoeCutout{
+  -webkit-animation: canoe 2s linear infinite alternate;
+  -moz-animation: canoe 2s linear infinite alternate;
+  animation: canoe 2s linear infinite alternate;
+}

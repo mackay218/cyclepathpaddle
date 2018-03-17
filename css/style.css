@@ -7,6 +7,12 @@
   box-shadow: inset 0 -20px 20px 0 rgba(0,0,0,0.2);
 }
 
+
+.navbar-collapse .collapse{
+  position: absolute;
+  top: 10vh;
+}
+
 @media only screen and (min-width: 575px){
 
   .collapse.navbar-collapse{
@@ -16,7 +22,7 @@
   .nav-link{
     color: #000 !important;
     text-shadow: -2px 0px #deca9a;
-    font-size: 20px;
+    font-size: 2vh;
     font-family: 'Permanent Marker', serif;
     -webkit-text-stroke: 1px #000;
   }
@@ -30,7 +36,7 @@
 
   .dropdown-menu{
     position: absolute;
-    margin-left: 8vw;
+    margin-left: 5vw;
     padding: 0;
     background-color: transparent;
     border: none;
@@ -61,13 +67,13 @@
   }
 
   .nav-link{
-    font-size: 5vw;
+    font-size: 4vh;
     font-family: 'Permanent Marker', serif;
   }
 
   .nav-link:hover{
     color: #108ded !important;
-    text-shadow: 0px -3px #000;
+    text-shadow: 0px -1px #000;
     font-family: 'Permanent Marker', serif;
     -webkit-text-stroke: 0px;
   }
@@ -75,9 +81,18 @@
   .dropdown-menu{
     background-color: transparent;
     border: none;
-    transition: 0.5s;
+    padding: 0;
+    margin: 0;
   }
 
+  .dropdown-item{
+    font-size: 3vh;
+  }
+
+}
+
+.dropdown-menu{
+  border-radius: 5%;
 }
 
 .dropdown-item{
@@ -101,7 +116,50 @@
   color: #000 !important;
 }
 
+@media only screen and (max-width: 900px) and (orientation: landscape){
+  .menu{
+    height: 15vh;
+  }
+
+  .nav-link{
+    font-size: 2vw;
+  }
+}
+
+
 
 #water{
   background-color: #108ded;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+#waves{
+  background: repeating-linear-gradient(
+    -1deg,
+    #9cd2fc,
+    transparent 1px,
+    #5db4f7 5vh,
+    #9cd2fc 2vh
+  );
+  -webkit-box-shadow: inset 20px 20px 20px 0 rgba(16, 141, 237, 0.8);
+  -moz-box-shadow: inset 20px 20px 20px 0 rgba(16, 141, 237, 0.8);
+  box-shadow: inset 20px 20px 20px 0 rgba(16, 141, 237, 0.8);
+  background-size: 400% 400%;
+  border-top-left-radius: 80%;
+  transform: rotate(2deg);
+}
+
+.ripples{
+  border-radius: 100%;
+  background: repeating-linear-gradient(
+    -1deg,
+    #9cd2fc,
+    transparent 1px,
+    #5db4f7 5px,
+    #9cd2fc 2px
+  );
+  background-size: 400% 400%;
+  transform: rotate(-5deg);
 }
