@@ -68,3 +68,68 @@
   -moz-animation: canoe 2s linear infinite alternate;
   animation: canoe 2s linear infinite alternate;
 }
+
+@-webkit-keyframes bike {
+  from{
+    transform: rotate(5deg);
+  }
+  to{
+    transform: rotate(-5deg);
+  }
+}
+@-moz-keyframes bike{
+  from{
+    transform: rotate(5deg);
+  }
+
+  to{
+    transform: rotate(-5deg);
+  }
+}
+@keyframes bike{
+  from{
+    transform: rotate(5deg);
+  }
+
+  to{
+    transform: rotate(-5deg);
+  }
+}
+
+
+#biker{
+  -webkit-animation: bike 2s linear infinite alternate;
+  -moz-animation: bike 2s linear infinite alternate;
+  animation: bike 2s linear infinite alternate;
+}
+
+@-webkit-keyframes spin {
+  from{-webkit-transform: rotate(0deg);}
+  to{-webkit-tranform: rotate(360deg);}
+}
+@-moz-keyframes spin {
+  from{-moz-transform: rotate(0deg);}
+  to{-moz-transform: rotate(360deg);}
+}
+@keyframes spin{
+  from{transform: rotate(0deg);}
+  to{transform: rotate(360deg);}
+}
+
+#hexContainer1{
+  -webkit-animation: spin 25s linear infinite alternate;
+  -moz-animation: spin 25s linear infinite alternate;
+  animation: spin 25s infinite alternate;
+}
+
+#hexContainer2{
+  -webkit-animation: spin 35s linear infinite alternate;
+  -moz-animation: spin 35s linear infinite alternate;
+  animation: spin 35s infinite alternate;
+}
+
+#hexContainer3{
+  -webkit-animation: spin 20s linear infinite alternate;
+  -moz-animation: spin 20s linear infinite alternate;
+  animation: spin 20s infinite alternate;
+}

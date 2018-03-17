@@ -126,13 +126,18 @@
   }
 }
 
-
+#sky{
+  background: linear-gradient(to bottom, #108ded, #fff);
+}
 
 #water{
   background-color: #108ded;
   border-top-left-radius: 100%;
   border-top-right-radius: 50%;
   border-bottom-left-radius: 50%;
+  -webit-box-shadow: -10px 5px 10px rgba(0,0,0,0.2);
+  -moz-box-shadow: -10px 5px 10px rgba(0,0,0,0.2);
+  box-shadow: -10px 5px 10px rgba(0,0,0,0.2);
 }
 
 #waves{
@@ -162,4 +167,35 @@
   );
   background-size: 400% 400%;
   transform: rotate(-5deg);
+}
+
+#grass{
+  background: linear-gradient(#1CA81C, #308733);
+  border-bottom: 30px solid #7c7c7c;
+  border-right: 40px solid #7c7c7c;
+}
+
+#grass2{
+  background: linear-gradient(#1CA81C, #308733);
+  border-top-left-radius: 100%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+#grass3{
+  background: linear-gradient(#1CA81C, #308733);
+  border-radius: 100%;
+  box-shadow: inset 80px -80px 10px rgba(0,0,0,0.2);
+}
+
+#path1{
+  background: linear-gradient(#7c7c7c, #5b5b5b);
+  border-top-left-radius: 50%;
+}
+
+#hill{
+  border-left: 20vw solid #ef611d;
+  border-bottom: 30vh solid #ef611d;
+  border-top: 20vw solid transparent;
+  border-right: 20vw solid transparent;
 }
