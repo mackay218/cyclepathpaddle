@@ -1,67 +1,107 @@
 
-#menu{
-  box-shadow: inset 0 -20px 20px 0 rgba(0,0,0,0.3);
-}
 
 .menu{
   border-radius: 20px;
 }
-
-.navbar.navbar-default{
-	background-color:transparent;
-	border-color:transparent;
-	background-image:none;
-	box-shadow:none;
+#logShadow{
+  box-shadow: inset 0 -20px 20px 0 rgba(0,0,0,0.2);
 }
 
-@media only screen and (max-width: 767px){
-  .nav.navbar-nav li a{
-    background-color: white;
+@media only screen and (min-width: 575px){
+
+  .collapse.navbar-collapse{
+    background: transparent;
   }
-  .nav.navbar-nav{
-    border: 2px solid black;
+
+  .nav-link{
+    color: #000 !important;
+    text-shadow: -2px 0px #deca9a;
+    font-size: 20px;
+    font-family: 'Permanent Marker', serif;
+    -webkit-text-stroke: 1px #000;
   }
-}
 
-.nav.navbar-nav li a{
-  color: #000 !important;
-  text-shadow: -1px 0px #000;
-  font-size: 1vh;
-  font-family: 'Permanent Marker', serif;
-  -webkit-text-stroke: 1px #deca9a;
-}
-
-.nav.navbar-nav li a:hover{
-  color: #000 !important;
-  text-shadow: -1px 0px #fff;
-  font-size: 5vh;
-  font-family: 'Permanent Marker', serif;
-  -webkit-text-stroke: 1px #fff;
-}
-
-@media only screen and (max-width: 767px){
-  .nav.navbar-nav li a{
-    text-shadow: none;
+  .nav-link:hover{
+    color: #fff !important;
+    text-shadow: 0px -3px #deca9a;
+    font-family: 'Permanent Marker', serif;
     -webkit-text-stroke: 0px;
   }
+
+  .dropdown-menu{
+    position: absolute;
+    margin-left: 8vw;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+  }
+
+  .dropdown-item{
+    background-color: rgba(255,255,255,0.5) !important;
+  }
+
+  .dropdown-item:hover{
+    background-color: rgba(255,255,255,0.5) !important;
+  }
+
 }
 
+@media only screen and (max-width: 574px){
 
-.collapse.navbar-collapse{
-  background-color: white !important;
+  .collapse .navbar-collapse {
+    width: 80vw;
+  }
+
+  .navbar-light .navbar-nav .nav-link{
+    color: #000;
+  }
+
+  .nav-item{
+    background: rgba(255,255,255,0.5);
+  }
+
+  .nav-link{
+    font-size: 5vw;
+    font-family: 'Permanent Marker', serif;
+  }
+
+  .nav-link:hover{
+    color: #108ded !important;
+    text-shadow: 0px -3px #000;
+    font-family: 'Permanent Marker', serif;
+    -webkit-text-stroke: 0px;
+  }
+
+  .dropdown-menu{
+    background-color: transparent;
+    border: none;
+    transition: 0.5s;
+  }
+
 }
 
-.navbar-toggle{
+.dropdown-item{
+  color: #000;
+  font-family: 'Permanent Marker', serif;
+}
+
+.dropdown-item:hover{
+  background-color: transparent;
+  color: #108ded;
+  text-shadow: 0px -1px #000;
+}
+
+.navbar-toggler{
   border: none !important;
   outline: none !important;
-  background-color: transparent !important;
+  background: transparent !important;
 }
 
-#navbarCollapse{
-  border: none !important;
-  outline: none!important;
+.navbar-toggler-icon{
+  color: #000 !important;
 }
 
-.icon-bar{
-  background-color: black !important;
+
+#water{
+  background-color: #108ded;
 }
