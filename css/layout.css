@@ -21,7 +21,7 @@ body{
 #menu{
   position: fixed;
   top: 0;
-  z-index: 4;
+  z-index: 6;
 }
 
 #menuLogo{
@@ -59,7 +59,6 @@ body{
     max-height: 0;
     display: block;
     overflow: hidden;
-
 }
 
 .dropdown.show .dropdown-menu {
@@ -73,6 +72,8 @@ body{
 
 #main{
   display: block;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 #hero{
