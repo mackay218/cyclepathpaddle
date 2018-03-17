@@ -17,6 +17,7 @@
 
   .collapse.navbar-collapse{
     background: transparent;
+
   }
 
   .nav-link{
@@ -39,15 +40,15 @@
     margin-left: 5vw;
     padding: 0;
     background-color: transparent;
-    border: none;
+
   }
 
   .dropdown-item{
-    background-color: rgba(255,255,255,0.5) !important;
+    background: rgba(26,105,201,0.9) !important;
   }
 
   .dropdown-item:hover{
-    background-color: rgba(255,255,255,0.5) !important;
+    background: rgba(26,105,201,0.9) !important;
   }
 
 }
@@ -58,12 +59,14 @@
     width: 80vw;
   }
 
+
+
   .navbar-light .navbar-nav .nav-link{
     color: #000;
   }
 
   .nav-item{
-    background: rgba(255,255,255,0.5);
+    background: rgba(26,105,201,0.9)
   }
 
   .nav-link{
@@ -72,7 +75,7 @@
   }
 
   .nav-link:hover{
-    color: #108ded !important;
+    color: #fff !important;
     text-shadow: 0px -1px #000;
     font-family: 'Permanent Marker', serif;
     -webkit-text-stroke: 0px;
@@ -102,7 +105,7 @@
 
 .dropdown-item:hover{
   background-color: transparent;
-  color: #108ded;
+  color: #fff;
   text-shadow: 0px -1px #000;
 }
 
@@ -185,6 +188,8 @@
 #grass3{
   background: linear-gradient(#1CA81C, #308733);
   border-radius: 100%;
+  -webkit-box-shadow: inset 80px -80px 10px rgba(0,0,0,0.2);
+  -moz-box-shadow: inset 80px -80px 10px rgba(0,0,0,0.2);
   box-shadow: inset 80px -80px 10px rgba(0,0,0,0.2);
 }
 

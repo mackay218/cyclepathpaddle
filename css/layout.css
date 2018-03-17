@@ -83,6 +83,7 @@ body{
   height: 80vh;
   width: 100vw;
   grid: auto auto / auto auto auto;
+  overflow: hidden;
 }
 
 #sky{
@@ -90,6 +91,39 @@ body{
   grid-column: 1/4;
   height: 100%;
   width: 100%;
+  z-index: 1;
+}
+
+#cloud{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 10vw;
+}
+
+#trees{
+  grid-row: 1/2;
+  grid-column: 2/4;
+  position: absolute;
+  bottom: 8vh;
+  right: -1vw;
+  width: 20vw;
+  z-index: 1;
+
+}
+
+#trees2{
+  grid-row: 1/2;
+  grid-column: 1/3;
+  position: absolute;
+  bottom: 9vh;
+  left: 0;
+  width: 20vw;
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  transform: rotate(2deg);
+  z-index: 1;
+
 }
 
 #water{
@@ -130,15 +164,6 @@ body{
   z-index: 1;
 }
 
-#canoeCutout{
-  position: absolute;
-  left: 5%;
-  bottom: 20%;
-  width: 40vh;
-  transform: rotate(5deg);
-  z-index: 2;
-}
-
 #waves{
   position: absolute;
   left: -2vw;
@@ -165,20 +190,6 @@ body{
   left: 15%;
 }
 
-#manPB{
-  position: absolute;
-  top: 6%;
-  left: 35%;
-  width: 10vh;
-}
-
-#womanPB{
-  position: absolute;
-  top: 7%;
-  left: 45%;
-  width: 10vh;
-}
-
 #grass{
   grid-row: 1/2;
   grid-column: 1/3;
@@ -192,46 +203,161 @@ body{
   z-index: 2;
 }
 
-#hill{
+#hillContainer{
   grid-row: 1/3;
   grid-column: 1/3;
   position: absolute;
   bottom: 0;
   left:0;
+  height: auto;
+  width: auto;
+  z-index: 4;
+}
+
+#hill{
   height: 40vh;
   width: 50vw;
-  z-index: 4;
+  z-index: 3;
+
 }
 
-#biker{
+#hillShadow{
   position: absolute;
-  top: -30vh;
-  right: -2vh;
-  height: 30vh;
-  z-index: 4;
+  bottom: -40vh;
+  left: 0vw;
+  height: 45vw;
+  width: 20vw;
+  transform: rotate(-60deg);
+  border-bottom-right-radius: 50%;
+  background: linear-gradient(to right, transparent, rgba(0,0,0,0.1));
+  -webkit-box-shadow: 100px 100px 100px 200px rgba(0,0,0,0.1);
+  -moz-box-shadow: 100px 100px 100px 200px rgba(0,0,0,0.1);
+  box-shadow: 5vw 0 5vh 1vw rgba(0,0,0,0.1);
+  z-index: 5;
 }
 
+@media only screen and (orientation: landscape){
+
+  #canoeCutout{
+    position: absolute;
+    left: 5%;
+    bottom: 20%;
+    width: 40vh;
+    transform: rotate(5deg);
+    z-index: 2;
+  }
+
+  #manPB{
+    position: absolute;
+    top: 6%;
+    left: 35%;
+    width: 10vh;
+  }
+
+  #womanPB{
+    position: absolute;
+    top: 7%;
+    left: 45%;
+    width: 10vh;
+  }
+
+  #biker{
+    position: absolute;
+    top: 15%;
+    right: 35%;
+    height: 30vh;
+    z-index: 4;
+  }
+
+
+}
 #hexContainer1{
   position: absolute;
-  left: -2vw;
+  bottom: 30%;
+  left: 40%;
+  z-index: -2;
 }
 
 #hexContainer2{
   position: absolute;
-  bottom: -2vh;
-  left: -8vw;
+  bottom: 35%;
+  left: 30%;
+  z-index: -2;
 }
 
 #hexContainer3{
   position: absolute;
-  bottom: 3vh;
-  left: -15vw;
+  bottom: 40%;
+  left: 20%;
+  z-index: -3;
 }
+
+@media only screen and (orientation: portrait){
+  #canoeCutout{
+    position: absolute;
+    left: 5%;
+    bottom: 20%;
+    width: 20vh;
+    transform: rotate(5deg);
+    z-index: 2;
+  }
+
+  #manPB{
+    position: absolute;
+    top: 8%;
+    left: 35%;
+    width: 5vh;
+  }
+
+  #womanPB{
+    position: absolute;
+    top: 9%;
+    left: 40%;
+    width: 5vh;
+  }
+
+  #biker{
+    position: absolute;
+    bottom: 65%;
+    right: 25%;
+    height: 20vh;
+    z-index: 4;
+  }
+
+  #hexContainer1{
+    position: absolute;
+    bottom: 60%;
+    left: 40%;
+    height: 0;
+    width: 0;
+    z-index: -2;
+  }
+
+  #hexContainer2{
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    height: 0;
+    width: 0;
+    z-index: -2;
+  }
+
+  #hexContainer3{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    height: 0;
+    width: 0;
+    z-index: -3;
+  }
+}
+
 .hexagon {
 	width: 10vw;
 	height: 5vw;
-	background: #ef611d;
+	background: linear-gradient( 45deg, #d7571a, #ef611d);
 	position: relative;
+  z-index: 3;
 }
 .hexagon:before {
 	content: "";
