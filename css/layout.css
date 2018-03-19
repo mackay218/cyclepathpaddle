@@ -23,7 +23,14 @@ body{
   margin: 0px !important;
   height: 10vh;
   width: 100vw;
+  border-radius: 20px;
   z-index: 5
+}
+
+#log{
+  height: 10vh;
+  width: 100vw;
+  border-radius: 20px;
 }
 
 #menu{
