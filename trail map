@@ -1,12 +1,14 @@
 <div id="trailMap">
   <!-- TRAILFORKS WIDGET START -->
   <div class="TrailforksRegionInfo" data-w="800px"
-  data-h="150px" data-rid="3573" data-counts="1" data-stats="1"></div>
+    data-h="150px" data-rid="3573" data-counts="1" data-stats="1">
+  </div>
   <div class="TrailforksWidgetMap" data-w="800px"
-  data-h="400px" data-rid="3573" data-maptype="terrain"
-  data-trailstyle="difficulty" data-controls="1" data-list="0"
-  data-dml="1" data-layers="region" data-z="11" data-lat="46.4809604"
-  data-lon="-93.9595845" data-hideunsanctioned="1"></div>
+    data-h="400px" data-rid="3573" data-maptype="terrain"
+    data-trailstyle="difficulty" data-controls="1" data-list="0"
+    data-dml="1" data-layers="region" data-z="11" data-lat="46.4809604"
+    data-lon="-93.9595845" data-hideunsanctioned="1">
+  </div>
   <a href="https://www.trailforks.com/region/crosby-82812/"></a>
   <a href="https://www.trailforks.com/"></a>
   <!-- TRAILFORKS WIDGET END -->
