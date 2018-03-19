@@ -23,6 +23,7 @@ body{
   margin: 0px !important;
   height: 10vh;
   width: 100vw;
+  z-index: 5
 }
 
 #menu{
