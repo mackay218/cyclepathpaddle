@@ -218,6 +218,10 @@ h1{
 
 /* trails */
 
+#trails{
+  font-family: "Montserrat", sans-serif;
+}
+
 .mapbtn{
   border-radius: 20px;
   height: 123px;
@@ -225,9 +229,13 @@ h1{
 }
 
 #mapBtn{
-  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 }
 
-
+#dnrLogo{
+  border-radius: 10%;
+  height: 75px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
 
 /*************************/
