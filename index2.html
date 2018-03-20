@@ -69,13 +69,21 @@
       </div>
 
     </div>
-
     <div id="hero">
-      <div id="bannerContainer">
-        <img id="banner" src="images/bannerText.png">
+      <div id="cycleBannerContainer" class="bannerContainer">
+        <img id="cycleBanner" src="images/cycleBanner.png">
       </div>
-
-      <div id="sky"> <img id="cloud" src="images/cloud.png"></div>
+      <div id="pathBannerContainer" class="bannerContainer">
+        <img id="pathBanner" src="images/pathBanner.png">
+      </div>
+      <div id="ampBannerContainer" class="bannerContainer">
+        <img id="ampBanner" src="images/ampersandBanner.png">
+      </div>
+      <div id="paddleBannerContainer" class="bannerContainer">
+        <img id="paddleBanner" src="images/paddleBanner.png">
+      </div>
+      <div id="sky"> </div>
+      <img id="cloud" src="images/cloud.png">
       <img id="trees" src="images/pineTrees.png">
       <img id="trees2" src="images/pineTrees.png">
       <div id="water">
@@ -114,7 +122,7 @@
       <div id="trailConditions">
         <div id="conditionsContainer">
           <h3>Trail Conditions</h3>
-          <div id="twitterFeedContainter">
+          <div id="conditionsFeedContainter" class="twitterFeedContainter">
               <a class="twitter-timeline"
                 href="https://twitter.com/CLMTBTCondition?ref_src=twsrc%5Etfw"
                 data-tweet-limit="7" data-chrome="noheader nofooter transparent
@@ -152,16 +160,46 @@
           </a>
         </div>
       </div>
-      <div id="events">
-        <h2>Events</h2>
-        <div id="eventContainer">
-          <a id="clmtbBtn" class="event" target="_blank" href="http://www.cuyunalakesmtb.com/events.html">
-            <img src="images/clmtb.png">
-          </a>
-          <button id="calBtn" type="button" class="btn btn-primary event"
-            data-toggle="modal" data-target="#calenderModal">
-            <h4>Calender</h4>
-          </button>
+
+      <div id="newsEvents">
+        <div id="news">
+          <h3>News</h3>
+          <div id="newsFeedContainter" class="twitterFeedContainter">
+              <a class="twitter-timeline"
+                href="https://twitter.com/CyclePathPaddle"
+                data-tweet-limit="7" data-chrome="noheader nofooter transparent
+                noborders
+                data-font="Arial Rounded MT Bold"">
+              </a>
+            </div>
+        </div>
+        <div id="eventsContainer">
+          <h3>Events</h3>
+          <div id="eventsWrap">
+            <div id="affilates">
+              <a  id="clmtbBtn" class="affiliateBtn" target="_blank" href="http://www.cuyunalakesmtb.com/events.html">
+                <img src="images/clmtb.png">
+              </a>
+              <a class="affiliateBtn" target="_blank" href="https://www.imba.com/engage/events">
+                <img id="imbaImg" src="images/imba_black_logo.png">
+              </a>
+              <a class="affiliateBtn" target="_blank" href="http://www.lakesproud.com/">
+                <img id="lakesProud" src="images/lakesProud.png">
+              </a>
+              <a class="affiliateBtn" target="_blank" href="https://peopleforbikes.org/">
+                <img id="peopleForBikes" src="images/peopleForBikes.png">
+              </a>
+              <a class="affiliateBtn" >
+                <img id="onlyInMN" src="images/onlyInMN.png">
+              </a>
+            </div>
+            <div id="googleCal">
+              <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=400&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%23125A12&amp;ctz=America%2FChicago"
+                style="border-width:0" width="100%" height="400" frameborder="0"
+                scrolling="no">
+              </iframe>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -190,24 +228,6 @@
               <a href="https://www.trailforks.com/"></a>
               <!-- TRAILFORKS WIDGET END -->
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Calender Modal-->
-    <div class="modal fade" id="calenderModal" tabindex="-1"
-      role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body" data-w="100%">
-            <iframe src="https://calendar.google.com/calendar/embed?title=Events&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=700&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%23125A12&amp;ctz=America%2FChicago"
-            style="border-width:0" width="100%" height="700" frameborder="0"
-            scrolling="yes"></iframe>
           </div>
         </div>
       </div>
