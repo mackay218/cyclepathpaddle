@@ -22,7 +22,7 @@
   .nav-link{
     color: #000 !important;
     text-shadow: -2px 0px #deca9a;
-    font-size: 2vh;
+    font-size: 3vh;
     font-family: 'Permanent Marker', serif;
     -webkit-text-stroke: 1px #000;
   }
@@ -126,16 +126,20 @@
   .nav-link{
     font-size: 2vw;
   }
+
+  #log{
+    height: 15vh;
+  }
 }
 
 /**************************************************/
 
 /* home page landing */
-h1{
-  font-family: 'Montserrat', sans-serif;
+
+
+#banner h1{
+  font-family: "Montserrat", sans-serif;
   font-size: 10vw;
-  color: rgba(255,255,255,0.4);
-  text-shadow: 0px 5px 2px rgba(0,0,0,0.1);
 }
 
 #sky{
@@ -222,6 +226,13 @@ h1{
   font-family: "Montserrat", sans-serif;
 }
 
+#twitterFeedContainter{
+  -webkit-box-shadow: inset 0px 5px 10px rgba(0,0,0,0.2);
+  -moz-box-shadow: inset 0px 5px 10px rgba(0,0,0,0.2);
+  box-shadow: inset 0px 5px 10px rgba(0,0,0,0.2);
+}
+
+
 .mapbtn{
   border-radius: 20px;
   height: 123px;
@@ -247,4 +258,8 @@ h1{
   -moz-box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
   box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
   border-radius: 20px;
+}
+
+#clmtbBtn{
+  border: 1px solid rgba(0,0,0,0.5)
 }
