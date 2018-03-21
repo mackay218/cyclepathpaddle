@@ -224,9 +224,9 @@
 }
 
 .twitterFeedContainter{
-  -webkit-box-shadow: inset 0px 5px 10px rgba(0,0,0,0.2);
-  -moz-box-shadow: inset 0px 5px 10px rgba(0,0,0,0.2);
-  box-shadow: inset 0px 5px 10px rgba(0,0,0,0.2);
+  -webkit-box-shadow: inset 0px 5px 10px rgba(0,0,0,0.2), inset 0 -20px 20px #ef611d;
+  -moz-box-shadow: inset 0px 5px 10px rgba(0,0,0,0.2), inset 0 -20px 20px #ef611d;
+  box-shadow: inset 0px 5px 10px rgba(0,0,0,0.2), inset 0 -20px 20px #ef611d;
 }
 
 
@@ -268,8 +268,8 @@
   -webkit-box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
   -moz-box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
   box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
-  height: auto;
-  width: 220px;
+  height: 100px;
+  width: 200px;
   border-radius: 20px;
   border: 1px solid rgba(0,0,0,0.5);
   display: flex;
@@ -285,7 +285,7 @@
   transform: scale(1.025);
   -webkit-box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
   -moz-box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
-  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+  box-shadow: 10px 10px 10px #ef611d;
 }
 
 #clmtbBtn{
@@ -294,7 +294,8 @@
 }
 
 #imbaImg{
-  transform: scale(0.5);
+  transform: scale(0.48);
+
 }
 
 #lakesProud{
@@ -303,7 +304,7 @@
 
 #peopleForBikes{
   height: 100px;
-  transform: scale(0.4);
+  transform: scale(0.38);
 }
 
 #onlyInMN{
