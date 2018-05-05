@@ -1,0 +1,640 @@
+html{
+  box-sizing: border-box;
+  min-height: 100%;
+  min-width: 100vw !important;
+}
+
+body{
+  min-height: 100% !important;
+  min-width: 100vw !important;
+  overflow-x: hidden;
+}
+
+.main{
+  min-height: 100% !important;
+  min-width: 100vw !important;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+#root{
+  min-height: 100% !important;
+  min-width: 100vw !important;
+  overflow-x: hidden;
+}
+/******** navigation ***********/
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 10vh;
+  min-width: 100vw !important;
+  z-index: 4;
+}
+
+.shadow{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 10vh;
+  background: transparent;
+  border-radius: 20px;
+  box-shadow: inset 0 -20px 20px 0 rgba(0,0,0,0.3), 0 10px 10px rgba(0,0,0,0.3);
+  z-index: 2;
+}
+
+@media only screen and (orientation: landscape) and (max-height: 320px){
+  .wood{
+    height: 12.5vh;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-height: 321px){
+  .wood{
+    height: 10vh;
+  }
+}
+
+@media only screen and (orientation: portrait){
+  .wood{
+    height: 10vh;
+  }
+}
+.wood{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.navbar.navbar-default{
+  position: fixed;
+  top: 0;
+  height: 10vh;
+  width: 100vw;
+  background: transparent;
+  border-radius: 20px;
+  border: none;
+  font-family: 'Permanent Marker', serif;
+  z-index: 2;
+}
+
+@media only screen and (orientation: landscape) and (min-width: 768px){
+  .nav.navbar-nav{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    transition: 0.5s;
+  }
+}
+
+.navbar-header{
+  height: 10vh;
+}
+
+.navbar-brand{
+  height: 10vh;
+}
+
+.navLogo{
+  position: absolute;
+  top: 0.5vh;
+  left: 0;
+  height: 9vh;
+  transform: rotate(-15deg);
+}
+
+.dropdown .dropdown-menu {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    max-height: 0;
+
+    opacity: 0;
+}
+
+.dropdown.open .dropdown-menu {
+    display: block;
+    max-height: 300px;
+    opacity: 1;
+}
+
+.navbar-collapse.collapse{
+  padding-left: 10vw;
+}
+
+.navbar-collapse.collapse.in{
+  border: none;
+}
+
+.navbar-toggle{
+  position: absolute;
+  right: 2vw;
+  height: 10vh;
+  margin: 0;
+  outline: none;
+  border: none;
+}
+
+.navbar-toggle.collapsed:hover{
+  background-color: transparent !important;
+}
+
+.navbar-toggle:focus{
+  background-color: transparent !important;
+}
+
+.hamburger-inner{
+  background-color: #634f3a;
+  box-shadow: 1px 1px 0 1px #deca9a;
+}
+
+.hamburger-inner::before{
+  background-color: #634f3a;
+  box-shadow: 1px 1px 0 1px #deca9a;
+}
+
+.hamburger-inner::after{
+  background-color: #634f3a;
+  box-shadow: 1px 1px 0 1px #deca9a;
+}
+
+.navbar-collapse.collapse li a{
+  font-size: 3vh;
+  color: #634f3a;
+  text-shadow: 3px 3px 2px #deca9a;
+}
+
+.dropdown-toggle:hover{
+  color: #000 !important;
+}
+
+.dropdown-menu{
+  position: absolute;
+  right: 40vw !important;
+  width: auto;
+  min-width: 245px;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  padding-top: 2vh;
+}
+
+.dropdown-menu li a{
+  color: #634f3a !important;
+}
+
+.dropdown-menu li a:hover{
+  color: black !important;
+}
+
+@media only screen and (orientation: landscape) and (max-width: 767px){
+  .nav.navbar-nav{
+    position: absolute;
+    left: 20vw;
+    width: auto;
+  }
+  .nav.navbar-nav a{
+    margin-top: 10px;
+    padding-left: 6vw;
+    background-image: url("components/images/wood.jpg");
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: inset 0 -2px 2px 5px rgba(0,0,0,0.2), 0 5px 5px rgba(0,0,0,0.5);
+  }
+  .dropdown a{
+    margin-top: 10px;
+    background-image: url("components/images/wood.jpg") !important;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: inset 0 -2px 2px 5px rgba(0,0,0,0.2), 0 5px 5px rgba(0,0,0,0.5);
+  }
+  .dropdown-menu{
+    z-index: -1;
+  }
+}
+
+@media (orientation: portrait){
+  .nav.navbar-nav{
+    position: absolute;
+    left: 20vw;
+    width: auto;
+  }
+  .nav.navbar-nav a{
+    margin-top: 10px;
+    padding-left: 6vw;
+    background-image: url("components/images/wood.jpg");
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: inset 0 -2px 2px 5px rgba(0,0,0,0.2), 0 5px 5px rgba(0,0,0,0.5);
+  }
+  .dropdown a{
+    margin-top: 10px;
+    background-image: url("components/images/wood.jpg") !important;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: inset 0 -2px 2px 5px rgba(0,0,0,0.2), 0 5px 5px rgba(0,0,0,0.5);
+  }
+  .dropdown-menu{
+    min-width: 35vw;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 768px){
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-collapse.collapse.in {
+        display: flex!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+    .dropdown-menu{
+      position: absolute;
+      left: 40vw;
+      top: -5vh;
+      z-index: -1;
+    }
+}
+
+.nav.navbar-nav{
+  width: auto;
+}
+
+.dropdown.open a:hover{
+  background-color: transparent !important;
+}
+
+.dropdown.open a{
+  background-color: transparent !important;
+}
+
+.dropdown-menu a{
+  margin-top: 10px;
+  background-image: url("components/images/wood.jpg") !important;
+  background-size: cover;
+  border-radius: 20px;
+  box-shadow: inset 0 -2px 2px 5px rgba(0,0,0,0.2), 0 5px 5px rgba(0,0,0,0.5);
+}
+
+
+/******************************************/
+
+.wrapper{
+  height: 100% !important;
+}
+
+/*******Footer *************************/
+
+footer{
+  position: relative;
+  height: auto;
+  width: 100vw;
+  background-color: #108ded;
+  overflow: hidden;
+}
+
+.footContainer{
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.signature{
+  width: auto;
+  color: #fff;
+  z-index: 2;
+}
+
+.dmLogo{
+  text-shadow: 1px 0px #fff;
+  font-size: 40px;
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1024px){
+  .footContainer{
+    padding: 5vh 5vw 10vh 10vw;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .businessHours{
+    position: relative;
+    left: 5vw;
+    width: 200px;
+  }
+
+  .infoContainer{
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+  }
+
+  .signature{
+    position: absolute;
+    left: 2vw;
+    bottom: 2vh;
+  }
+
+  .dmLogo{
+    position: relative;
+    top: 2vh;
+  }
+
+  .directionsContainer{
+    padding-left: 15vw;
+    z-index: 2;
+  }
+
+  .directionsContainer Iframe{
+    height: 20vw !important;
+    width: 20vw !important;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 1023px){
+  .footContainer{
+    padding: 5vh 5vw 10vh 5vw;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .businessHours{
+    width: 200px;
+  }
+
+  .infoContainer{
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+  }
+
+  .signature{
+    position: absolute;
+    left: 2vw;
+    bottom: 2vh;
+  }
+
+  .directionsContainer{
+    position: relative;
+    top: 10vh;
+    height: 10vw;
+    width: 10vw;
+    z-index: 2;
+  }
+
+  .directionsContainer Iframe{
+    height: 10vw !important;
+    width: 10vw !important;
+  }
+
+  .dmLogo{
+    position: relative;
+    top: 4vh;
+  }
+}
+
+@media only screen and (orientation: portrait) and (min-width: 768px){
+  .footContainer{
+    height: auto;
+    width: 100vw;
+    padding: 0 2vw 0 2vw;
+    display: grid;
+    grid: auto auto auto auto/ auto auto;
+  }
+
+  .businessHours{
+    padding: 2vh 5vw 0 5vw;
+    grid-row: 1/2;
+    grid-column: 1/3;
+    width: 100vw;
+  }
+
+  .infoContainer{
+    grid-row: 2/3;
+    grid-column: 1/3;
+    padding: 0 5vw 0 5vw;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+  }
+
+  .directionsContainer{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    position: relative;
+    bottom: 12vh;
+    left: 60vw;
+    height: 20vw;
+    width: 100vw;
+    z-index: 2;
+  }
+
+  .directionsContainer Iframe{
+    height: 20vw !important;
+    width: 20vw !important;
+  }
+
+  .signature{
+    grid-row: 4/5;
+    grid-column: 1/3;
+    position: relative;
+    left: 10vw;
+    bottom: 2vh;
+    z-index: 2;
+  }
+}
+
+@media only screen and (orientation: portrait) and (max-width: 767px){
+  .footContainer{
+    height: auto;
+    width: 100vw;
+    padding: 0 2vw 0 2vw;
+    display: grid;
+    grid: auto auto auto auto/ auto auto;
+  }
+
+  .businessHours{
+    padding: 2vh 5vw 0 5vw;
+    grid-row: 1/2;
+    grid-column: 1/3;
+    width: 100vw;
+  }
+
+  .infoContainer{
+    width: auto;
+    grid-row: 2/3;
+    grid-column: 1/3;
+    padding: 0 5vw 0 15vw;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    z-index: 2;
+  }
+
+  .directionsContainer{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    position: relative;
+    bottom: 5vh;
+    left: 5vw;
+    height: 20vw;
+    width: 100vw;
+    z-index: 2;
+  }
+
+  .directionsContainer Iframe{
+    height: 20vw !important;
+    width: 20vw !important;
+  }
+  .signature{
+    grid-row: 4/5;
+    grid-column: 1/3;
+    position: relative;
+    left: 10vw;
+    bottom: 2vh;
+    z-index: 2;
+  }
+
+  .dmLogo{
+    position: relative;
+    top: 2vh;
+  }
+}
+
+.infoContainer h4{
+  width: 50%;
+  text-align: center;
+  font-style: sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  color: #fff;
+}
+
+p.address{
+  white-space: pre;
+}
+
+div.footNav{
+  white-space: pre;
+
+}
+
+.footNav a{
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #fff;
+  z-index: 2;
+}
+
+.footNav{
+  margin-right: 5vw;
+}
+
+.contactInfo{
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #fff;
+  z-index: 2;
+}
+
+.businessHours{
+  height: auto;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+}
+
+.socialLinks{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.socialLinks a{
+  font-size: 4vh;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media only screen and (orientation: landscape){
+  .footWaves{
+    position: absolute;
+    bottom: -20%;
+    right: -5vw;
+    height: 80%;
+    width: 100%;
+    transform: rotate(-5deg);
+    background: repeating-linear-gradient(
+     -1deg,
+     #9cd2fc,
+     transparent 1px,
+     #5db4f7 8vh,
+     #9cd2fc 4vh);
+     border-top-right-radius: 50%;
+     border-top-left-radius: 50%;
+    -webkit-box-shadow: inset 20px 20px 20px 0 rgba(16, 141, 237, 0.8);
+    -moz-box-shadow: inset 20px 20px 20px 0 rgba(16, 141, 237, 0.8);
+    box-shadow: inset 20px 20px 20px 0 rgba(16, 141, 237, 0.8);
+    background-size: 600% 600%;
+    z-index: 0;
+  }
+}
+
+@media only screen and (orientation: portrait){
+  .footWaves{
+    position: absolute;
+    bottom: -10vh;
+    left: 2vw;
+    height: 60%;
+    width: 120%;
+    transform: rotate(-5deg);
+    background: repeating-linear-gradient(
+     -1deg,
+     #9cd2fc,
+     transparent 1px,
+     #5db4f7 10vh,
+     #9cd2fc 5vh);
+    -webkit-box-shadow: inset 20px 20px 20px 0 rgba(16, 141, 237, 0.8);
+    -moz-box-shadow: inset 20px 20px 20px 0 rgba(16, 141, 237, 0.8);
+    box-shadow: inset 20px 20px 20px 0 rgba(16, 141, 237, 0.8);
+    background-size: 800% 800%;
+    z-index: 0;
+  }
+}
+
+
+/*****************************************/

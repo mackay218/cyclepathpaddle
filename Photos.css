@@ -1,0 +1,39 @@
+.wrapper{
+  height: 100%;
+  width: 100vw;
+  background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.photoContainer{
+  height: auto;
+  width: 100vw;
+  padding:30vh 2vw 5vh 2vw;
+  background-color: rgba(255,255,255,0.8);
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.photoContainer h1{
+  position: absolute;
+  top: 15vh;
+  width: 100%;
+  text-align: center;
+}
+
+.photos{
+  height: auto;
+  width: 100vw;
+  margin-left: 3vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.photo{
+  height: 30vw;
+  width: 30vw;
+}

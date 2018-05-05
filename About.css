@@ -1,0 +1,86 @@
+.wrapper{
+  height: 100%;
+  width: 100vw;
+  background-size: cover;
+  background-size: cover;
+}
+
+.aboutContainer{
+  height: auto;
+  width: 100vw;
+  padding:15vh 2vw 5vh 2vw;
+  background-color: rgba(255,255,255,0.8);
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.aboutContainer h1{
+  width: 100%;
+  text-align: center;
+}
+
+.aboutContainer img{
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+@media only screen and (orientation: landscape) and (max-width: 1023px){
+  .aboutContainer{
+    align-items: center;
+  }
+
+  .aboutContainer p {
+    height: auto;
+    width: 100%;
+  }
+
+  .aboutContainer img{
+    height: 40%;
+    width: 100%;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1024px){
+  .storeFrontAbout{
+    height: 25vw;
+    width: 40vw;
+  }
+
+  .aboutInfo{
+    height: auto;
+    width: 90vw;
+    margin-left: 5vw;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .aboutContainer p {
+    height: auto;
+    width: 45vw;
+    margin: 2vh 2vw 5vh 2vw;
+    text-indent: 2em;
+  }
+}
+
+@media only screen and (orientation: portrait){
+  .aboutContainer{
+    align-items: center;
+  }
+
+  .aboutInfo{
+    padding-left: 2vw;
+    width: 90vw;
+    height: auto;
+  }
+
+  .aboutContainer p {
+    height: auto;
+    width: 100%;
+  }
+
+  .aboutContainer img{
+    height: 40%;
+    width: 90vw;
+  }
+}

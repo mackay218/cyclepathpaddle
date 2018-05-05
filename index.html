@@ -1,258 +1,127 @@
-
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Cycle Path & Paddle</title>
-  <meta charset="utf-8">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!--favicon-->
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-  <link rel="manifest" href="favicon/site.webmanifest">
-  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#2d89ef">
-  <meta name="theme-color" content="#ffffff">
-  <!--styles-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-  crossorigin="anonymous">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/animations.css">
-  <!--fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Permanent+Marker" rel="stylesheet">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
 
-</head>
-<body>
-  <div id="main">
-    <div class="menu" id="menu">
-      <img id="log" src="images/wood.jpg">
-      <div class="menu" id="logShadow"></div>
-      <div class="container menu" id="navContainer">
-        <nav class="navbar navbar-expand-sm navbar-light">
-          <a class="navbar-brand" href="#"><img class="logo" id="menuLogo" src="images/cyclepathpaddle.png"></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#" id="bikeDropdown"
-                  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Bikes
-                </a>
-                <div class="dropdown-menu" data-toggle="dropdown" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">For Sale</a>
-                  <a class="dropdown-item" href="#">Service</a>
-                  <a class="dropdown-item" href="#">Fit Guide</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">Rentals</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#" id="infoDropdown"
-                  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
-                <div class="dropdown-menu" data-toggle="dropdown" aria-labelledby="infoDropdown">
-                  <a class="dropdown-item" href="#">About</a>
-                  <a class="dropdown-item" href="#">Contact</a>
-                  <a class="dropdown-item" href="#">Employment</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Permanent+Marker" rel="stylesheet">
+    <!--toggle icon-->
+    <link href="hamburgers.css" rel="stylesheet">
+    <!--icomoon icons-->
+    <link href="icon.css" rel="stylesheet">
+    <title>Cycle Path & Paddle</title>
+    <!--country state dropdown-->
+    <script src="dist/geodatasource-cr.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="dist/geodatasource-countryflag.css">
+  </head>
+  <body onload="paint()">
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
 
-    </div>
-    <div id="hero">
-      <div id="cycleBannerContainer" class="bannerContainer">
-        <img id="cycleBanner" src="images/cycleBanner.png">
-      </div>
-      <div id="pathBannerContainer" class="bannerContainer">
-        <img id="pathBanner" src="images/pathBanner.png">
-      </div>
-      <div id="ampBannerContainer" class="bannerContainer">
-        <img id="ampBanner" src="images/ampersandBanner.png">
-      </div>
-      <div id="paddleBannerContainer" class="bannerContainer">
-        <img id="paddleBanner" src="images/paddleBanner.png">
-      </div>
-      <div id="sky"> </div>
-      <img id="cloud" src="images/cloud.png">
-      <img id="trees" src="images/pineTrees.png">
-      <img id="trees2" src="images/pineTrees.png">
-      <div id="water">
-        <div id="canoe">
-          <img id="canoeCutout" src="images/canoe-cutout.png"/>
-          <div class="ripples" id="waves2"></div>
-          <div class="ripples" id="waves3"></div>
-        </div>
-        <img id="manPB" src="images/yellowMan-paddleBoard-cutout.png"/>
-        <img id="womanPB" src="images/yellowWoman-paddleBoard-cutout.png"/>
-        <div id="waves"></div>
-      </div>
-      <div id="path1"></div>
-      <div id="grass"></div>
-      <div id="grass2"></div>
-      <div id="grass3"></div>
-      <div id="hillContainer">
-        <div id="hexContainer1">
-          <div class="hexagon"></div>
-        </div>
-        <div id="hexContainer2">
-          <div class="hexagon"></div>
-        </div>
-        <div id="hexContainer3">
-          <div class="hexagon"></div>
-        </div>
-        <div id="hill">
-          <div id="hillShadow"></div>
-        </div>
-        <img id="biker" src="images/mountainBiker.png">
-      </div>
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
 
-    </div>
-    <div id="trails">
-      <h2 id="trailsTitle">Local Trails</h2>
-      <div id="trailConditions">
-        <div id="conditionsContainer">
-          <h3>Trail Conditions</h3>
-          <div id="conditionsFeedContainter" class="twitterFeedContainter">
-              <a class="twitter-timeline"
-                href="https://twitter.com/CLMTBTCondition?ref_src=twsrc%5Etfw"
-                data-tweet-limit="7" data-chrome="noheader nofooter transparent
-                noborders
-                data-font="Arial Rounded MT Bold"">
-                Tweets by CLMTBTCondition
-              </a>
-            </div>
-        </div>
-        <div id="weatherContainer">
-              <a class="weatherwidget-io"
-              href="https://forecast7.com/en/46d48n93d96/crosby/?unit=us"
-              data-label_1="Crosby Minnesota" data-label_2="WEATHER"
-              data-font="Roboto"
-              data-icons="Climacons Animated"
-              data-theme="original"
-              data-basecolor="rgba(255,255,255, 0)"
-              data-textcolor="#000" data-highcolor="#ef611d"
-              data-lowcolor="#41a4f0" data-suncolor="#e5e10f"
-              data-mooncolor="#f0ec47" data-cloudcolor="#777"
-              data-cloudfill="#fff" data-raincolor="#41a4f0"
-              data-snowcolor="#fff" >Crosby Minnesota WEATHER</a>
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script>
+      function hamSpin(){
+        // Look for .hamburger
+        var hamburger = document.getElementById("hamburger");
+        // On click
+        hamburger.addEventListener("click", function() {
+        // Toggle class "is-active"
+        hamburger.classList.toggle("is-active")
+        // Do something else, like open/close menu
+        });
+      }
+    </script>
+    <!--Twitter feeds-->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <!--Weather widget-->
+    <script>
+      function weather(){
+        !function(d,s,id){
+          var js,fjs=d.getElementsByTagName(s)[0];
+          if(!d.getElementById(id)){
+            js=d.createElement(s);
+            js.id=id;
+            js.src='https://weatherwidget.io/js/widget.min.js';
+            fjs.parentNode.insertBefore(js,fjs);
+          }
+        }
+        (document,'script','weatherwidget-io-js');
+      }
+    </script>
+    <!--Trail Map -->
+    <script type="text/javascript">
+      function trailmap(){
+        var script = document.createElement("script");
+        script.setAttribute("src", "https://es.pinkbike.org/ttl-86400/sprt/j/trailforks/widget.js");
+        var showMap = document.getElementsByTagName("head")[0].appendChild(script);
+        var widgetCheck = false;
+      }
+    </script>
+    <!--twitterfeed customization-->
+    <script>
 
-            </div>
-        <div id="trailMapContainer">
-          <h3>Maps</h3>
-          <img id="mnstencil" src="images/mnstencil.png">
-          <button id="mapBtn" type="button" class="btn btn-primary mapbtn"
-            data-toggle="modal" data-target="#mapModal">
-            <img class="mapbtn" id="mapPic" src="images/mapbtn.jpg">
-          </button>
-          <a id="dnrMap" target="_blank"
-            href="http://files.dnr.state.mn.us/maps/state_parks/sra00302.pdf">
-            <img id="dnrLogo" src="images/dnr.jpg"> Downloadable
-          </a>
-        </div>
-      </div>
+      var conditionsCSS = "" +
+        "body{font-family: sans-serif}" +
+        ".timeline-Tweet-text{color: #ef611d;}"
+        ".TweetAuthor-decoratedName{'Permanent Marker', sans-serif}";+
+        ".TweetAuthor-screenName.Identity-screenName{font-family: 'Arial', sans-serif;}"
 
-      <div id="newsEvents">
-        <div id="news">
-          <h3>News</h3>
-          <div id="newsFeedContainter" class="twitterFeedContainter">
-              <a class="twitter-timeline"
-                href="https://twitter.com/CyclePathPaddle"
-                data-tweet-limit="7" data-chrome="noheader nofooter transparent
-                noborders
-                data-font="Arial Rounded MT Bold"">
-              </a>
-            </div>
-        </div>
-        <div id="events">
-          <h3>Events</h3>
-            <div id="googleCal">
-              <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=400&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%23125A12&amp;ctz=America%2FChicago"
-                style="border-width:0" width="300px" height="250px" frameborder="0"
-                scrolling="no">
-              </iframe>
-            </div>
-        </div>
-      </div>
-      <div id="affilates">
-        <a  id="clmtbBtn" class="affiliateBtn" target="_blank" href="http://www.cuyunalakesmtb.com/events.html">
-          <img src="images/clmtb.png">
-        </a>
-        <a class="affiliateBtn" target="_blank" href="https://www.imba.com/engage/events">
-          <img id="imbaImg" src="images/imba_black_logo.png">
-        </a>
-        <a class="affiliateBtn" target="_blank" href="http://www.lakesproud.com/">
-          <img id="lakesProud" src="images/lakesProud.png">
-        </a>
-        <a class="affiliateBtn" target="_blank" href="https://peopleforbikes.org/">
-          <img id="peopleForBikes" src="images/peopleForBikes.png">
-        </a>
-        <a class="affiliateBtn" >
-          <img id="onlyInMN" src="images/onlyInMN.png">
-        </a>
-      </div>
-    </div>
+        function paint(){
+          var w = document.getElementById("twitter-widget-0").contentDocument;
 
-    <!-- Map Modal -->
-    <div class="modal fade" id="mapModal" tabindex="-1"
-      role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body" data-w="100%">
-            <div id="trailMap">
-              <!-- TRAILFORKS WIDGET START -->
-              <div class="TrailforksWidgetMap" data-w="100%"
-                data-h="400px" data-rid="3573" data-maptype="terrain"
-                data-trailstyle="difficulty" data-controls="1" data-list="0"
-                data-dml="1" data-layers="region" data-z="11" data-lat="46.4788273"
-                data-lon="-93.9769139" data-hideunsanctioned="1">
-              </div>
-              <a href="https://www.trailforks.com/region/cuyuna-country-state-recreation-area/"></a>
-              <a href="https://www.trailforks.com/"></a>
-              <!-- TRAILFORKS WIDGET END -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--javascript-->
-  <!--jquery-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <!--bootstrap-->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
-  <!--animations-->
-  <script type="text/javascript" src="animations.js"></script>
-  <!--Twitter Timeline-->
-  <script async src="https://platform.twitter.com/widgets.js"
-    charset="utf-8">
-  </script>
-  <!--Weather-->
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];
-    if(!d.getElementById(id)){js=d.createElement(s);js.id=id;
-      js.src='https://weatherwidget.io/js/widget.min.js';
-      fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-  </script>
-  <!--Trail Map -->
-  <script type="text/javascript">
-    var script = document.createElement("script");
-    script.setAttribute("src", "https://es.pinkbike.org/ttl-86400/sprt/j/trailforks/widget.js");
-    document.getElementsByTagName("head")[0].appendChild(script);
-    var widgetCheck = false;
-  </script>
-</body>
+          var s = document.createElement("style");
+            s.innerHTML = conditionsCSS;
+            s.type = "text/css";
+            w.head.appendChild(s);
+
+          }
+    </script>
+
+    <!--test for form input-->
+    <script>
+      function formTest(){
+        var nameInput = document.getElementById('message');
+
+        document.querySelector('form.messageForm').addEventListener('submit', function (e) {
+
+          //prevent the normal submission of the form
+          e.preventDefault();
+
+          console.log(message.value);
+        });
+
+      }
+    </script>
+  </body>
 </html>
