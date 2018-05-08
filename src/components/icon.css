@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('./fonts/icomoon.eot?nosqx0');
+  src:  url('./fonts/icomoon.eot?nosqx0#iefix') format('embedded-opentype'),
+    url('./fonts/icomoon.ttf?nosqx0') format('truetype'),
+    url('./fonts/icomoon.woff?nosqx0') format('woff'),
+    url('./fonts/icomoon.svg?nosqx0#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-info:before {
+  content: "\e900";
+}
+.icon-kayak:before {
+  content: "\e901";
+}
+.icon-mountain-bike:before {
+  content: "\e902";
+}
+.icon-paperplane:before {
+  content: "\e903";
+}
+.icon-ruler:before {
+  content: "\e904";
+}
+.icon-dmLogo5px2:before {
+  content: "\e906";
+}
+.icon-dmLogo:before {
+  content: "\e907";
+}
+.icon-images2:before {
+  content: "\e90e";
+}
+.icon-profile2:before {
+  content: "\e923";
+}
+.icon-wrench2:before {
+  content: "\e991";
+}
+.icon-cogs:before {
+  content: "\e995";
+}
+.icon-checkmark22:before {
+  content: "\ea11";
+}
+.icon-facebook2:before {
+  content: "\ea90";
+}
+.icon-instagram2:before {
+  content: "\ea92";
+}
+.icon-twitter2:before {
+  content: "\ea96";
+}
+.icon-home3:before {
+  content: "\e905";
+}

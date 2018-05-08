@@ -1,0 +1,92 @@
+.wrapper{
+  height: 100%;
+  width: 100vw;
+  background-size: cover;
+  background-size: cover;
+}
+
+.serviceContainer{
+  height: auto;
+  width: 100vw;
+  padding:15vh 2vw 5vh 2vw;
+  background-color: rgba(255,255,255,0.8);
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.serviceContainer h1{
+  width: 100%;
+  text-align: center;
+}
+
+.serviceContainer img{
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+@media only screen and (orientation: portrait){
+  .serviceContainer{
+    align-items: center;
+  }
+
+  .serviceInfo{
+    width: 90vw;
+    height: auto;
+    padding-left: 2vw;
+  }
+
+  .serviceContainer p {
+    height: auto;
+    width: 100%;
+  }
+
+  .serviceContainer img{
+    height: 40%;
+    width: 90vw;
+    margin-bottom: 10px;
+  }
+}
+
+
+@media only screen and (orientation: landscape) and (max-width: 1023px){
+  .serviceContainer{
+    align-items: center;
+  }
+
+  .serviceInfo{
+    height: auto;
+    width: 90vw;
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .seviceContainer p {
+    height: auto;
+    width: 100%;
+  }
+
+  .seviceContainer img{
+    height: 40%;
+    width: 100%;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1024px){
+
+  .serviceInfo{
+    height: auto;
+    width: 90vw;
+    margin-left: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .serviceContainer p {
+    height: auto;
+    width: 40vw;
+    padding: 10vh 5vw 0 5vw;
+    text-indent: 2em;
+  }
+}

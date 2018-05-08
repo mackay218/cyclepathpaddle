@@ -1,0 +1,82 @@
+.wrapper{
+  height: 100%;
+  width: 100vw;
+  background-size: cover;
+  background-size: cover;
+}
+
+.forSaleContainer{
+  height: auto;
+  width: 100vw;
+  padding:30vh 2vw 5vh 2vw;
+  background-color: rgba(255,255,255,0.8);
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.forSaleContainer h1{
+  position: absolute;
+  top: 15vh;
+  width: 100%;
+  text-align: center;
+}
+
+.textContainer{
+  width: 80vw;
+}
+
+.forSaleContainer p{
+  height: auto;
+  width: auto;
+}
+
+.bikeLogoContainer{
+  height: auto;
+  width: 96vw;
+  padding:0 2vw 10vh 4vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.bikeLogo{
+  flex-grow: 1;
+  height: inherit;
+  max-width: 300px;
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.raleigh{
+  height: 200px;
+}
+
+.diamondback{
+  height: 175px;
+  width: 125px;
+}
+
+.framedbikes{
+  height: 150px;
+  width: 250px;
+}
+
+.jamis{
+  height: 50px;
+  width: 250px;
+}
+
+.RMB{
+  height: 150px;
+  width: 250px;
+}
+
+.surly{
+  height: 50px;
+  width: 200px;
+}

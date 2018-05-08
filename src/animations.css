@@ -1,0 +1,217 @@
+
+
+@-webkit-keyframes waves {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes waves {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes waves {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.waves{
+  -webkit-animation: waves 30s ease infinite;
+  -moz-animation: waves 30s ease infinite;
+  animation: waves 30s ease infinite;
+}
+
+.waves2{
+  -webkit-animation: waves 5s linear infinite alternate;
+  -moz-animation: waves 5s linear infinite alternate;
+  animation: waves 5s linear infinite alternate;
+}
+
+.waves3{
+  -webkit-animation: waves 6s linear infinite alternate;
+  -moz-animation: waves 6s linear infinite alternate;
+  animation: waves 6s linear infinite alternate;
+}
+
+.footWaves{
+  -webkit-animation: waves 10s ease infinite;
+  -moz-animation: waves 10s ease infinite;
+  animation: waves 10s ease infinite;
+}
+
+@-webkit-keyframes canoe {
+  from{
+    transform: rotate(2deg);
+  }
+  to{
+    transform: rotate(-2deg);
+  }
+}
+@-moz-keyframes canoe{
+  from{
+    transform: rotate(2deg);
+  }
+
+  to{
+    transform: rotate(-2deg);
+  }
+}
+@keyframes canoes{
+  from{
+    transform: rotate(2deg);
+  }
+
+  to{
+    transform: rotate(-2deg);
+  }
+}
+
+.canoeCutout{
+  -webkit-animation: canoe 2s linear infinite alternate;
+  -moz-animation: canoe 2s linear infinite alternate;
+  animation: canoe 2s linear infinite alternate;
+}
+
+
+@keyframes bike{
+  from{
+    -webkit-transform: rotate(8deg) skewY(-5deg);
+    -moz-transform: rotate(8deg) skewY(-5deg);
+    transform: rotate(8deg) skewY(-5deg);
+  }
+
+  to{
+    -webkit-transform: rotate(-8deg) skewY(5deg);
+    -moz-transform: rotate(-8deg) skewY(5deg);
+    transform: rotate(-8deg) skewY(5deg);
+  }
+}
+
+@keyframes bike2 {
+  from, to{}
+  0%, 10%{position: absolute;
+          top: -5vh; left: -10vw;}
+  10%, 25%{position: absolute;
+           top: 10vh; left: 10vw;}
+  25%, 50%{position: absolute;
+           top: 25vh; left: 20vw;
+            transform: rotate(15deg) skewY(-5deg);;}
+  50%, 80%{position: absolute;
+            top: 35vh; left: 35vw;
+            transform: rotate(-10deg);}
+  80%, 90%{position: absolute;
+            top: 40vh; left: 50vw;
+            transform: rotate(-10deg) skewY(5deg);}
+  90%, 100%{position: absolute;
+            top: 50vh; left: 100vw;
+            transform: rotate(-10deg) skewY(5deg);}
+}
+
+.biker{
+  animation: bike2 10s linear infinite;
+}
+
+@-webkit-keyframes grassShadow{
+  from{
+    -webkit-box-shadow: inset 80px -80px 10px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset 80px -80px 10px rgba(0,0,0,0.2);
+    box-shadow: inset 80px -80px 10px rgba(0,0,0,0.2);
+  }
+  to{
+    -webkit-box-shadow: inset 80px -40px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset 80px -40px 0px rgba(0,0,0,0.2);
+    box-shadow: inset 80px -40px 0px rgba(0,0,0,0.2);
+  }
+}
+
+@-webkit-keyframes grassShadow{
+  from{
+    -webkit-box-shadow: inset 80px -80px 10px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset 80px -80px 10px rgba(0,0,0,0.2);
+    box-shadow: inset 80px -80px 10px rgba(0,0,0,0.2);
+  }
+  to{
+    -webkit-box-shadow: inset 80px -40px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset 80px -40px 0px rgba(0,0,0,0.2);
+    box-shadow: inset 80px -40px 0px rgba(0,0,0,0.2);
+  }
+}
+
+@-moz-keyframes grassShadow{
+  from{
+    -webkit-box-shadow: inset 80px -80px 10px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset 80px -80px 10px rgba(0,0,0,0.2);
+    box-shadow: inset 80px -80px 10px rgba(0,0,0,0.2);
+  }
+  to{
+    -webkit-box-shadow: inset 80px -40px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset 80px -40px 0px rgba(0,0,0,0.2);
+    box-shadow: inset 80px -40px 0px rgba(0,0,0,0.2);
+  }
+}
+
+@keyframes grassShadow{
+  from{
+    -webkit-box-shadow: inset 80px -80px 10px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset 80px -80px 10px rgba(0,0,0,0.2);
+    box-shadow: inset 80px -80px 10px rgba(0,0,0,0.2);
+  }
+  to{
+    -webkit-box-shadow: inset 80px -40px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset 80px -40px 0px rgba(0,0,0,0.2);
+    box-shadow: inset 80px -40px 0px rgba(0,0,0,0.2);
+  }
+}
+
+.grass3{
+  -webkit-animation: grassShadow 10s linear infinite alternate;
+  -moz-animation: grassShadow 10s linear infinite alternate;
+  animation: grassShadow 10s linear infinite alternate;
+}
+
+
+@-webkit-keyframes cloud{
+  from{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+  }
+  to{
+    position: absolute;
+    top: 25%;
+    left: 60%;
+  }
+}
+
+@-moz-keyframes cloud{
+  from{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+  }
+  to{
+    position: absolute;
+    top: 25%;
+    left: 60%;
+  }
+}
+
+@keyframes cloud{
+  from{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+  }
+  to{
+    position: absolute;
+    top: 22%;
+    left: 60%;
+  }
+}
+
+.cloud{
+  -webkit-animation: cloud 20s linear infinite alternate;
+  -moz-animation: cloud 20s linear infinite alternate;
+  animation: cloud 20s linear infinite alternate;
+}

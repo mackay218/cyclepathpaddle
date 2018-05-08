@@ -1,0 +1,121 @@
+.wrapper{
+  height: 100%;
+  width: 100vw;
+  background-size: cover;
+  background-size: cover;
+}
+
+.rentalInfoContainer{
+  height: auto;
+  width: 100vw;
+  padding:30vh 2vw 5vh 2vw;
+  background-color: rgba(255,255,255,0.8);
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.rentalInfoContainer h1{
+  position: absolute;
+  top: 15vh;
+  width: 100%;
+  text-align: center;
+}
+
+
+.tableContainer{
+  height: auto;
+  width: auto;
+  padding: 0 1vw 1vw 1vh;
+  margin-top: 2vh;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.tableContainer th{
+  width: 5vw;
+  text-decoration: underline;
+}
+
+.tableContainer td{
+  padding-left: 1vw;
+}
+
+.tableContainer p{
+  padding-top: 2vh;
+  width: 100%;
+}
+
+@media only screen and (orientation: portrait){
+  .tableContainer table{
+    width: 90vw;
+    height: auto;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 1023px){
+  .tableContainer table{
+    width: 90vw;
+    height: auto;
+  }
+}
+
+
+@media only screen and (orientation: landscape) and (min-width: 1024px){
+  .tableContainer table{
+    width: 50vw;
+    height: auto;
+  }
+}
+
+.deliveryBtn{
+  position: relative;
+  left: 20vw;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, #a0a0a0, #fff, #a0a0a0);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.deliveryBtn:hover{
+  color: #ef611d;
+}
+
+.deliverySchedule{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.deliverySchedule ul{
+  position: relative;
+  right: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.deliverySchedule li{
+  list-style-type: none;
+  font-weight: bold;
+}
+
+.reserveBtn{
+  padding: 5px 5px 5px 5px;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, #a0a0a0, #fff, #a0a0a0);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+a.reserveBtn {
+  text-decoration: none;
+}
+
+.reserveBtn:hover{
+  color: #ef611d;
+}

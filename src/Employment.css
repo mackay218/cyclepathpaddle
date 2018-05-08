@@ -1,0 +1,50 @@
+.wrapper{
+  height: 100%;
+  width: 100vw;
+  background-size: cover;
+  background-size: cover;
+}
+
+.employmentContainer{
+  height: auto;
+  width: 100vw;
+  padding:15vh 2vw 5vh 2vw;
+  background-color: rgba(255,255,255,0.8);
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.employmentContainer h1{
+  width: 100%;
+  text-align: center;
+}
+
+.appContainer{
+  width: 80%;
+  height: auto;
+  padding: 2vh 2vw 2vh 2vw;
+  background-color: rgba(0,0,0,0.2);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+
+.half{
+  margin-right: 10%;
+  width: 40% !important;
+}
+
+.appContainer label{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.radioBtn{
+  width: 2vw;
+  padding:0 2vw 0 2vw;
+}

@@ -1,0 +1,87 @@
+.wrapper{
+  height: 100%;
+  width: 100vw;
+  background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.photoContainer{
+  height: auto;
+  width: 100vw;
+  padding:30vh 2vw 5vh 2vw;
+  background-color: rgba(255,255,255,0.8);
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.photoContainer h1{
+  position: absolute;
+  top: 15vh;
+  width: 100%;
+  text-align: center;
+}
+
+.photos{
+  height: auto;
+  width: 100vw;
+  margin-left: 3vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.photo{
+  height: 30vw;
+  width: 30vw;
+}
+
+.feed{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.feed a{
+  margin-right: 10px;
+
+}
+
+.feed img{
+  height: 200px;
+  width: 200px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+}
+
+@media only screen and (orientation: portrait) and (max-width: 320px){
+  .feed{
+    padding-left: 15vw;
+  }
+}
+
+@media only screen and (orientation: portrait) and (min-width: 321px) and (max-width: 1023px){
+  .feed{
+    padding-left: 20vw;
+  }
+}
+
+@media only screen and (orientation: portrait) and (min-width: 1024px){
+  .feed{
+    padding-left: 5vw;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 1023px){
+  .feed{
+    padding: 5vh 0 0 10vw;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1024px){
+
+  .feed{
+    padding-left: 2vw;
+  }
+}
