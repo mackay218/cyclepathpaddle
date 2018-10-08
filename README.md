@@ -33,7 +33,7 @@ Weather Widget
 ## Authors
 Daniel MacKay
 
-##Acknowlegements
+## Acknowlegements
 Trailforks.com
 Twitter
 Instagram
